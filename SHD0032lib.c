@@ -1,7 +1,8 @@
-#define F_CPU 8000000UL
+#define F_CPU 8000000UL //8000000 Only for 8MHz Clock
 #include <avr/io.h>
 #include <util/delay.h>
 
+//Set pins
 #define SPI_EN PB1
 #define SPI_LATCH PB2
 #define SPI_SCK PB3
@@ -67,4 +68,4 @@ void default_image(void)
 	PORTB &=~(1 << SPI_LATCH);
 	PORTB &=~(1 << SPI_EN);
 }
-
+
