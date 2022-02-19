@@ -1,6 +1,4 @@
-#define F_CPU 8000000UL //8000000 Only for 8MHz Clock
 #include <avr/io.h>
-#include <util/delay.h>
 
 //Set pins
 #define SPI_EN PB1
